@@ -1,0 +1,24 @@
+	ORG 0
+       
+HERE:  
+	CPL P2.5
+	MOV R4, #78
+	SIG25: MOV R5, #10 
+        SIG24:setb P2.4
+        ACALL DELAY ; DELAY24 is for
+	ACALL DELAY ; for %60 duty cycle
+	ACALL DELAY ; DELAY24 is for
+	clr P2.4
+	ACALL DELAY
+	ACALL DELAY
+	DJNZ R5, SIG24
+	DJNZ R4, SIG25
+	SJMP HERE
+
+DELAY:
+	MOV R1,#2
+    H2: MOV R2,#56
+    H1: DJNZ R2,H1
+	DJNZ R1,H2
+	RET
+	END
