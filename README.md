@@ -1,6 +1,6 @@
 # EEE212
 
-##All codes were written by me (Ege Ozan Özyedek) in collaboration with my dear friend/lab partner Şevki Gavrem Kulkuloğlu.
+All codes were written by me (Ege Ozan Özyedek) in collaboration with my dear friend/lab partner Şevki Gavrem Kulkuloğlu.
 
 Assembly codes from my microprocessors course. Written in 8051 Assembly using the Atmel 8052 microcontroller.
 Includes on and off labs. Off labs are much more comprehensive (such as serial comminication between two microprocessors
